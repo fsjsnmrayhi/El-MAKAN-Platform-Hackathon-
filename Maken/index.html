@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>MAKAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">About</a>
+          </li>
+          
+          <li>
+            <a href="#" class="nav-link  ">ACTIVITY</a>
+          </li>
+          <li>
+            <a href="./book.html" class="nav-link">Reservation</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Maken ...    مكان </h1>
+          <p>The experience and history teach us that there is no creation of social forms and social relationships without the creation of an appropriate space. </p>
+          <button>MORE INFO</button>
+        </div>
+        <div class="image">
+          <img src="image/home1.jpg" class="slide">
+        </div>
+        <div class="image_item">
+          <img src="image/home1.jpg" class="slide active" onclick="img('image/home1.jpg')">
+          <img src="image/home2.jpg" class="slide" onclick="img('image/home2.jpg')">
+          <img src="image/home3.jpg" class="slide" onclick="img('image/home3.jpg')">
+          <img src="image/home4.jpg" class="slide" onclick="img('image/home4.jpg')">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+
+
+
+  <section class="book">
+    
+    </div>
+  </section>
+
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="image/a1.jpg" class="image1">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h2>Welcome to MAKEN/مكان</h2>
+          <p> This passage discusses the importance of a space that reflects commitment to national cultural policies in addressing challenges related to digital transformations. It emphasizes the impact of recent technological advancements on various aspects of society, including cultural and artistic innovation. The integration of artificial intelligence into the arts is highlighted, with the recognition that the cultural sector needs to adapt to new technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper top" id="">
+    <div class="container">
+      <div class="text">
+        <p>during major transformations, there has been a noticeable need to establish suitable spaces for skill development and group formation, such as creative centers and collaborative workspaces (spaces/fablabs/creative hubs/coworking/maker spaces), commonly referred to as innovation spaces. </p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fa fa-briefcase"></i>
+            <span>Workshops and Classes</span>
+          </div>
+         
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Cultural Exhibitions</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-microphone"></i>
+            <span>Lectures and Talks</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-swimmer"></i>
+            <span>Performances</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Conference room</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>Community Events</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-book"></i>
+            <span>Book Clubs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>you're looking for information or ideas related to activities at a cultural center</h5>
+          <h2>Activity</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/r1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Calligraphy design</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Maken AI ART</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Maken DesignLab</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNITIES</h5>
+          <h2>Feedback</h2>
+        </div>
+
+        <div class="para">
+          <p> my visit to your cultural center was a memorable and enlightening experience. It's clear that your team's dedication to preserving and promoting cultural heritage, coupled with a focus on innovation and education, makes the cultural center a valuable asset to our community. </p>
+          <div class="box flex">
+            <div class="img  ">
+              <img src="image/c.jpg" alt="">
+            </div>
+            <div class="name">
+              <h5>kamel tablela</h5>
+              <h5></h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/re.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>MAkEN FACTORY</h2>
+          <p> it's the room where you can find your art inspirations to devolop wisely your creativity
+          </p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionItemHeading">Calligraphy design</h2>
+            <div class="accordionItemContent">
+              <p>Calligraphy is a beautiful and artistic form of writing that involves creating decorative letters and symbols.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordionItem close">
+            <h2 class="accordionItemHeading">Maken Podcast</h2>
+            <div class="accordionItemContent">
+              <p>It seems like you're interested in making a podcast! Creating a podcast can be a rewarding and enjoyable experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordionItem close">
+            <h2 class="accordionItemHeading">Maken AI ART</h2>
+            <div class="accordionItemContent">
+              <p>AI art involves using artificial intelligence algorithms and tools to generate unique and creative pieces of artwork. Here's a general guide on how you can make AI art using various techniques
+              </p>
+            </div>
+          </div>
+
+          <div class="accordionItem close">
+            <h2 class="accordionItemHeading">Maken XR Studio</h2>
+            <div class="accordionItemContent">
+              <p>Creating an XR (Extended Reality) Studio involves working with technologies like Virtual Reality (VR) and Augmented Reality (AR) to develop immersive experiences. 
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionItemHeading');
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14131.036661259493!2d85.3239595!3d27.6938375!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637666630951!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <div class="container grid mtop">
+      <div class="box">
+        <p> Welcome to MAKAN, your favorite online destination! To make your shopping experience as seamless as possible</p>
+        <p>Accepted payment methods </p>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Recent News</h3>
+
+        <ul>
+          <li>Offer beginner to advanced level coding workshops</li>
+          <li>Showcasing local or international artists</li>
+          <li>Guest speakers discussing cultural topics</li>
+          <li>Facilitating discussions around literature, encouraging reading and intellectual exchange.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>  ACTIVITIES</h3>
+        <ul>
+          <li>Calligraphy Design Club</li>
+          <li>Podcast Space</li>
+          <li>Coworking Space</li>
+          <li>AI Art Club</li>
+          <li>Design Lab</li>
+          <li>XR Studio</li>
+          <li>Resource Center</li>
+          <li>Pitch Zone</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3> Contact Us</h3>
+        <ul>
+
+          <li>Centre Fadhel Ben Achour pour la Culture et l'Art </li>
+
+          <li> <i class="far fa-envelope"></i>
+            hello@luviana.com</li>
+          <br>
+          <li>
+            <i class="far fa-phone-alt"></i>
+            1.954.456.6789
+          </li>
+          <li><i class="far fa-phone-alt"></i>
+            1.954.456.6788</li>
+          <br>
+          <li><i class="far fa-comments"></i>
+            24/7 Customer Service</li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
